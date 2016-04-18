@@ -1,0 +1,5 @@
+(defun findDifference (set-a set-b)
+	(flet ((member-of (list) (lambda (item) (member item list))))
+		(append (remove-if (member-of set-a) set-b) (remove-if (member-of set-b) set-a))
+	)
+)
