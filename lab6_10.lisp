@@ -1,0 +1,12 @@
+(defun allSubsets (list)
+	(if (null list) '(nil)
+		(let* (
+				(a (car list))
+	         	(d (cdr list))
+	         	(s (allSubsets d))
+	         	(v (mapcar (lambda (x) (cons a x)) s))
+         	)
+    		(append s v)
+		)
+	)
+)
