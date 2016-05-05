@@ -7,7 +7,7 @@
 	)
 )
 
-(defun intersect (lst1 lst2); в оригинале ПЕРЕСЕЧЕНИЕ
+(defun intersect (lst1 lst2)
 	(cond
 		((null lst1) nil)
 		((null lst2) nil)
