@@ -5,6 +5,7 @@
 All you need is install CLISP by `sudo apt-get install clisp` in your UNIX system.
 
 ## Usage
+### Labs 1-6
 To run lab just start `clisp` in your terminal. 
 After that load necessary lab into it by `(load "labX_X.lisp")`
 Now you can use following function for current lab by `(function param '(list like param))`. For example:
@@ -20,3 +21,13 @@ And for get out of this hellish environment use `(bye)`.
 
 *And never forget about polish pshe-notation.* **NEVER!**
 ![POLSHA STRONG](http://all-reg.net/templates/exet/images/tegstrong.png)
+
+### Labs 7-9
+This labs are written in Python, so to run you need to go to lab work directory and:
+```bash
+virtualenv -p /usr/bin/python3 env
+source env/bin/activate
+pip install -r requirements.txt
+python main.py
+```
+Enjoy! (*Now you can forget about polish notation*)
